@@ -294,8 +294,8 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for details.
 
 **Chirag Dugar** · Data & AI Intern @ EMIDS
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github&logoColor=white)](https://github.com/yourusername)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin&logoColor=white)](www.linkedin.com/in/chirag-dugar-341077252)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat&logo=github&logoColor=white)](https://github.com/chiragdugar04)
 
 ---
 

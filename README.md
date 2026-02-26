@@ -32,39 +32,8 @@ Built and optimised for CPU-only inference on consumer hardware (Intel i7-1355U)
 
 ## 🏗️ Architecture
 
-```
-PDF Upload
-    │
-    ▼
-PyMuPDF4LLM ──────────────────── Native Markdown extraction (~10s / 60 pages)
-    │
-    ▼
-MarkdownHeaderTextSplitter ────── Semantic parent sections (1000 chars, header-aware)
-    │
-    ▼
-RecursiveCharacterTextSplitter ── Child chunks (300 chars, 4 parallel threads)
-    │
-    ├─────────────────────────────────────────────────────┐
-    ▼                                                     ▼
-ChromaDB                                            BM25 Index
-(nomic-embed-text, 768-dim)                   (rank_bm25, keyword)
-    │                                                     │
-    └──────────────────┬──────────────────────────────────┘
-                       ▼
-           Hybrid Fusion + Deduplication
-                       │
-                       ▼
-      ms-marco-MiniLM-L-4-v2  (Cross-Encoder Reranker)
-                       │
-                       ▼
-           Parent Section Promotion
-                       │
-                       ▼
-      Qwen 2.5 (3B) via Ollama ──── Streaming response
-                       │
-                       ▼
-           Streamlit Chat UI
-```
+![Architecture Diagram](assets/Screenshot%202026-02-26%20182130.png)
+
 
 ---
 

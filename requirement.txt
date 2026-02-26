@@ -1,0 +1,31 @@
+# Core framework
+streamlit>=1.35.0
+
+# LangChain stack
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-ollama>=0.1.0
+langchain-core>=0.2.0
+langchain-text-splitters>=0.2.0
+
+# Vector DB
+chromadb>=0.5.0
+
+# PDF parsing — fast, no ML models required (replaces marker-pdf)
+pymupdf4llm>=0.0.17
+pymupdf>=1.24.0
+
+# Retrieval & reranking
+sentence-transformers>=3.0.0
+rank_bm25>=0.2.2
+
+# Embeddings (Ollama handles the model; this is the Python client)
+# Ensure you have run: ollama pull nomic-embed-text
+
+# Utilities
+python-dotenv>=1.0.0
+tiktoken>=0.7.0
+
+# NOTE: Remove marker-pdf from your environment if previously installed.
+# It loads heavy ML models that cause the 45-min ingestion slowdown.
+# Run: pip uninstall marker-pdf -y
